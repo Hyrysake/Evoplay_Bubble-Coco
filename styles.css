@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #6E00FA 50%, #6E00FA 50%);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.body-desktop {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #6E00FA;
+}
+
+.H2 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 67.01px;
+    letter-spacing: 0.01em;
+    color: #FFC20E;
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.advantage {
+    width: 30%;
+    padding: 65px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.H4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.advantage p, .steps p, .review p, .footer-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.how-to-play {
+    background-color: #6E00FA;
+    color: #FFFF;
+    padding: 40px 20px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.how-to-play-2 {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap:45px 224px;
+}
+.text-advant{
+    font-family: 'Poppins', sans-serif;
+    max-width: 250px;
+    font-size: 16px;
+    color: #1E0E3F; 
+    text-align: left; 
+    padding-top: 45px;
+
+}
+.step {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 60px;
+    text-align: left;
+}
+
+.step h3 {
+    font-size: 28px;
+    color: #FFC20E;
+    margin-bottom: 10px;
+}
+
+.step:nth-child(4) {
+    order: 3;
+}
+
+.step:nth-child(2) {
+    order: 2;
+}
+
+.reviews {
+    padding: 40px 20px;
+}
+
+.review-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    color: #5B00D0;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative; 
+    z-index: 2; 
+    margin: 0 10px; 
+}
+
+
+.carousel-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; 
+    height: 50px; 
+    background-color: #B08AFF; 
+    border-radius: 50%; 
+    z-index: -1; 
+}
+
+.review {
+    background: linear-gradient(135deg, #8425FC 25%, #6D06EF);
+    margin: 0 10px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 410px;
+    max-height: 209px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 27px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    font-size: 16px;
+    
+}
+
+footer {
+    background-color: #6E00FA;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-content p:first-child {
+    margin-left: 16px;
+}
+
+.footer-content p:last-child {
+    margin-right: 16px;
+}
+
+.background-section {
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+    padding-top: 50px;
+    background-image: url('./images/blue_ball.png'), url('./images/yellow_ball.png'), url('./images/pink_ball.png'), url('./images/Ellipse\ 49.png'), url('./images/Ellipse\ 50.png'), url('./images/Ellipse\ 51.png');
+    background-repeat: no-repeat;
+    background-position: right 15% top 8%, left 9% top 63%, left 27% top 70%,  center top, center top, center top;
+    background-size: 11%, 6%, 2%, cover, cover, cover;
+    overflow: hidden;
+}
+
+
+@media (max-width: 1440px) {
+    .H2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .H4 {
+        font-size: 16px;
+    }
+
+    .advantage {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .how-to-play-2 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .steps {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .text-advant {
+        max-width: 100%;
+        padding-top: 20px;
+    }
+
+    .step {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .step h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .review-carousel {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .review {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content p {
+        margin-bottom: 10px;
+    }
+
+    .background-section {
+        background-position: right 10% top 8%, left 5% top 63%, left 10% top 70%, center top, center top, center top;
+        background-size: 20%, 10%, 4%, cover, cover, cover;
+    }
+}
